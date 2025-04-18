@@ -5,13 +5,13 @@ namespace Assignment3.Tests
     public class SerializationTests
     {
         private ILinkedListADT users;
-        private readonly string testFileName = "test_users.bin";
+        private readonly string testFileName = "test_users.json";
 
         [SetUp]
         public void Setup()
         {
-            // Uncomment the following line
-            //this.users = new SLL();
+
+            this.users = new SLL();
 
             users.AddLast(new User(1, "Joe Blow", "jblow@gmail.com", "password"));
             users.AddLast(new User(2, "Joe Schmoe", "joe.schmoe@outlook.com", "abcdef"));
